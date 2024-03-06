@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/** Genérico */
+.container {
+    width: 1200px;
+    max-width: 100%;
+}
+
+.d-flex {
+    display: flex
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.montserrat-letra {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gap {
+    gap: 76px;
+}
+
+
+
+/* Header */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(48, 48, 171);
+}
+
+#nombreHeader {
+    font: italic small-caps bold 16px/2 cursive;
+}
+
+.menu ul {
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+    display: flex;
+}
+
+.menu ul li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font: 14px/16px sans-serif;
+}
+
+.menu ul li a:hover {
+    color: gray;
+}
+
+
+/** Section */
+.main-content{
+    max-width: 100%;
+    width: fit-content;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    
+}
+
+#quienSoy {
+    width: 500px;
+}
+
+#foto {
+    max-width: 300px;
+}
+
+.tituloSection {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 53px;
+    color: rgb(73, 175, 115);
+    margin: 16px 0px;
+}
+
+h2 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 16px 0px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(73, 175, 115);
+    margin: 10px 0px
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+/** Footer */
+footer {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive */
+/* lg */
+@media (max-width:1023px) {
+    .lg-column{
+        flex-direction: column;
+    }
+
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    #foto{
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    #foto img{
+        max-width: 100%;
+    }
+
+    #quienSoy {
+        width: auto;
+    }
+
+    #foto {
+        width: auto;
+        align-items: center;
+    }
+    
+}
